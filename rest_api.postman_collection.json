@@ -1,0 +1,140 @@
+{
+  "info": {
+    "_postman_id": "2b39df34-4d79-413f-a7f4-c7e549e4c222",
+    "name": "rest_api",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "44857573",
+    "_collection_link": "https://go.postman.co/collection/44857573-2b39df34-4d79-413f-a7f4-c7e549e4c222?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "CREATE",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "nama_product",
+              "value": "Sepatu",
+              "type": "text",
+              "uuid": "0816c60a-751a-410c-b9f1-aedc89710563"
+            },
+            {
+              "key": "deskripsi",
+              "value": "Nike",
+              "type": "text",
+              "uuid": "13de0b9b-531a-4eb8-b823-c4262e938eba"
+            },
+            {
+              "key": "gambar",
+              "type": "file",
+              "uuid": "70bf3c65-78b4-47be-9f48-00a8f5f2023c",
+              "src": "/D:/sepatu.jpeg"
+            }
+          ]
+        },
+        "url": {
+          "raw": "localhost:8080/product",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "product"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GETALL",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "nama_product",
+              "value": "",
+              "type": "text",
+              "uuid": "aa9a0472-9415-4ba4-a442-bb07846b5a7a"
+            },
+            {
+              "key": "deskripsi",
+              "value": "",
+              "type": "text",
+              "uuid": "a7736e0d-d474-4a3f-9dec-0fa6d3f24750"
+            },
+            {
+              "key": "gambar",
+              "value": "",
+              "type": "text",
+              "uuid": "5681c898-e951-4f1b-b16d-039d4cdca3cd"
+            }
+          ]
+        },
+        "url": {
+          "raw": "localhost:8080/api/products",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "products"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GETBYID",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "UPDATE",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "REGISTER",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "LOGIN",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "LOGOUT",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    }
+  ]
+}
